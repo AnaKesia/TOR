@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="pt-br">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Holder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="teste.css">
+ </head>
+ <body>
+    <div class="container mt-4">
+    <h1 class="display-4 text-center">
+        Book
+    </h1>
+
+ <form autocomplete="off" id="book-form">
+ <div class="form-group">
+        <input type="text" class="form-control" id="Titulo" placeholder="Titulo">
+    </div>
+    <div class="class form-group">
+        <input type="text" class="form-control" id="Autor" placeholder="Autor">
+    </div> 
+    <div class="form-group">
+        <input type="text" class="form-control" id="Gênero" placeholder="Gênero">
+    </div>
+    <div class="class form-group">
+        <input type="text" class="form-control" id="Ano" placeholder="Ano">
+    </div>
+    <input type="submit" class="btn btn-primary btn-block" value="add book">
+ </form>
+ <table class="table table-striped mt-5">
+    <thead>
+        <tr>
+            <td>Titulo</td>
+            <td>Autor</td>
+            <td>Gênero</td>
+            <td>Ano</td>
+        </tr>
+    </thead>
+    <tbody id="book-list"></tbody>
+ </table>
+</div></div>
+<button id="dark-mode-toggle">Toggle Dark Mode</button>
+</body>
+<script src="books.js"></script>
+ </html>
