@@ -1,10 +1,10 @@
-/* Default styles */
+/* Estilo padrão */
 body {
     background-color: #ffffff;
     color: #000000;
   }
   
-  /* Dark mode styles */
+  /* Modo escuro */
   .dark-mode body {
     background-color: #1c1c1c;
     color: #ffffff;
