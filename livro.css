@@ -1,0 +1,10 @@
+h1{
+    color: palevioletred;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    size: 10px;
+    box-shadow: 2cm;
+    color-scheme: blue;
+}
