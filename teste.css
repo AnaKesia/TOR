@@ -1,12 +1,12 @@
 /* Estilo padrão */
 body {
     background-color: #ffffff;
-    color: #000000;
+    color: hsl(200, 100%, 8%);
   }
   
   /* Modo escuro */
   .dark-mode body {
-    background-color: #1c1c1c;
+    background-color: hsl(200, 100%, 8%);
     color: #ffffff;
   }
 

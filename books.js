@@ -1,11 +1,13 @@
 //classe livro
 
 class Livro{
-    constructor(Titulo, Autor, Gênero, Ano){
+    constructor(Titulo, Autor, Gênero, Ano, Classificacao, Paginas){
     this.Titulo = Titulo;
     this.Autor = Autor
     this.Gênero = Gênero
     this.Ano = Ano
+    this.classificacao = Classificacao
+    this.Paginas = Paginas
 
 }
 }
@@ -57,6 +59,8 @@ class UI{
         <td>${Livro.Autor}</td>
         <td>${Livro.Gênero}</td>
         <td>${Livro.Ano}</td>
+        <td>${Livro.Classificacao}</td>
+        <td>${Livro.Paginas}</td>
         <td>
             <a href="#" class="btn btn-danger btn-sm delete">X</a>
         </td>
@@ -71,6 +75,8 @@ class UI{
         document.getElementById("Autor").value = ''
         document.getElementById("Gênero").value = ''
         document.getElementById("Ano").value = ''
+        document.getElementById("Classificacao").value = ''
+        document.getElementById("Paginas").value = ''
     }
 
     static MostrarAlerta(Mensagem, className) {
@@ -117,12 +123,14 @@ document.addEventListener ('submit', function (e) {
     const Autor = document.querySelector("#Autor").value
     const Gênero = document.querySelector("#Gênero").value
     const Ano = document.querySelector("#Ano").value
+    const Paginas = document.querySelector("#Paginas").value
+    const Classificacao = document.querySelector("#Classificacao").value
 
-    if (Titulo === "" || Autor === ""|| Gênero === "" || Ano === ""){
+    if (Titulo === "" || Autor === ""|| Gênero === "" || Ano === ""|| Paginas=== "" || Classificacao === "" ){
     UI.MostrarAlerta("Por favor preencha todos os campos.","danger")
     }
     else {
-        const livro = new Livro(Titulo,Autor,Gênero,Ano)
+        const livro = new Livro(Titulo,Autor,Gênero,Ano, Paginas, Classificacao)
 
         UI.addLivroAlista(livro)
         Salvar.addLivro(livro)

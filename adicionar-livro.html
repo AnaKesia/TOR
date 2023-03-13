@@ -11,7 +11,7 @@
  <body>
     <div class="container mt-4">
     <h1 class="display-4 text-center">
-        Book
+        Adicione seu livro.
     </h1>
 
  <form autocomplete="off" id="book-form">
@@ -27,6 +27,12 @@
     <div class="class form-group">
         <input type="text" class="form-control" id="Ano" placeholder="Ano">
     </div>
+    <div class="class form-group">
+        <input type="text" class="form-control" id="Paginas" placeholder="Páginas">
+    </div>
+    <div class="class form-group">
+        <input type="text" class="form-control" id="Classificacao" placeholder="Classificação">
+    </div>
     <input type="submit" class="btn btn-primary btn-block" value="add book">
  </form>
  <table class="table table-striped mt-5">
@@ -36,6 +42,9 @@
             <td>Autor</td>
             <td>Gênero</td>
             <td>Ano</td>
+            <td>Classificação</td>
+            <td>Páginas</td>
+            <td>Insira Imagem:</td>
         </tr>
     </thead>
     <tbody id="book-list"></tbody>
