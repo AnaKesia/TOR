@@ -1,13 +1,9 @@
-/* Estilo padrão */
-body {
-    background-color: #ffffff;
-    color: hsl(200, 100%, 8%);
-  }
+
   
   /* Modo escuro */
   .dark-mode body {
     background-color: hsl(200, 100%, 8%);
-    color: #ffffff;
+    color: rgb(5, 170, 170)
   }
 
   .dark-mode table{

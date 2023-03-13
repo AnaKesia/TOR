@@ -104,8 +104,10 @@ class UI{
 }
 
 //mostrar livro
+//Livros devem ser mostrados em sua própria página. Resolver isso depois.
 
 document.addEventListener('DOMContentLoaded', UI.MostrarLivros)
+
 
 //remover livro
 document.querySelector('#book-list').addEventListener('click', function (e){
@@ -148,23 +150,4 @@ document.addEventListener ('submit', function (e) {
 //menu
 
 //login
-
-//dark mode
-const darkModeToggle = document.querySelector('#dark-mode-toggle');
-const htmlElement = document.documentElement;
-const darkModeClass = 'dark-mode';
-
-darkModeToggle.addEventListener('click', () => {
-  htmlElement.classList.toggle(darkModeClass);
-
-  if (htmlElement.classList.contains(darkModeClass)) {
-    localStorage.setItem('darkModeEnabled', true);
-  } else {
-    localStorage.removeItem('darkModeEnabled');
-  }
-});
-
-if (localStorage.getItem('darkModeEnabled')) {
-  htmlElement.classList.add(darkModeClass);
-}
 
